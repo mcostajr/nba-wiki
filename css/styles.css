@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header > h1,
+header > p {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha-tempo {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    height: 60vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow:auto;
+}
+
+.linha-tempo > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linha-tempo > a:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.295);
+}
+
+.linha-tempo > a:hover {
+    background-color: rgba(128, 128, 128, 0.658);
+    transition: 0.5s;
+}
+
+.linha-tempo div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+img {
+    max-width: 300px;
+    max-height: 170px;
+}
+
+a > img {
+    flex: 1;
+    margin-left: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.info-jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.info-jogo > h1 {
+    font-size: 1.6rem;
+}
+
+.voltar-home {
+    border: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.voltar-home:hover {
+    background-color: rgb(128, 128, 128);
+    transition: 0.5s;
+}
+
+main > a {
+    margin-top: 50px;
+}
